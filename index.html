@@ -13,6 +13,12 @@
     * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
     }
 
     .Grand-C {
@@ -20,12 +26,15 @@
         align-items: center;
         flex-direction: column;
         margin-top: 10px;
+        gap: 20px;
+        width: 90%;
     }
 
     .netero {
         display: flex;
         justify-content: space-between;
-        width: 90%;
+        width: 100%;
+
     }
 
     .Zoldyck {
@@ -34,30 +43,162 @@
     }
 
     .Second-C {
-        display: grid;
-        grid-template-rows: 3fr 1fr;
-        width: 90%;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: gray;
+        height: 110vh;
+        border-radius: 10px;
     }
 
     .Second-C-son-1 h1 {
-        font-size: 100px;
-    }
-    .Second-C-son-1 h2 {
-        font-size: 50px;
-    }
-    .Second-C-son-1 h3 {
-        font-size: 25px;
+        font-size: 8vh;
     }
 
-    .Second-C-son-2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40%;
+    .Second-C-son-1 h2 {
+        font-size: 20vh;
+    }
+
+    .Second-C-son-1 h3 {
+        font-size: 5.5vh;
     }
 
     .ButtonForSecondSon {
-      padding: 2%;
+        padding: 1%;
+        width: 20%;
+        height: 10%;
+        border-radius: 10px;
+    }
+
+    .son-c1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lorem {
+        display: flex;
+        flex-flow: column wrap;
+        width: 30%;
+    }
+
+    .width-second {
+        width: 85%;
+    }
+
+    .Third-C {
+        display: flex;
+        gap: 2%;
+        width: 100%;
+
+    }
+
+    .Third-C button {
+        padding: 3%;
+        border-radius: 10px;
+        margin-top: 5%;
+    }
+
+    .third-son1 {
+        width: 24%;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .third-son2 {
+        width: 24%;
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        border-radius: 20px;
+    }
+
+    .third-son3 {
+        width: 50%;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        height: 50vh;
+    }
+
+    .cuatro-c {
+        display: flex;
+        gap: 2%;
+        width: 100%;
+
+    }
+
+    .cuatro-son-1 {
+        width: 50%;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        height: 65vh;
+        border: 5px solid;
+    }
+
+    .cuatro-son-2 {
+        width: 24%;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        height: 55vh;
+    }
+
+    .cuatro-son-3 {
+        width: 24%;
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        height: 55vh;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .sons-icons {
+        display: flex;
+        height: 10vh;
+        align-items: center;
+        gap:10px;
+    }
+    .Quinto-c{
+        display: flex;
+        width: 100%;
+        height: 78vh;
+        align-items: center;
+    }
+    .centrar-5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        width: 100%;
+        height: 40vh;
+        border-radius: 10px;
+        margin-top: 15%;
+    }
+    .centrar-5-1{
+        display: flex;
+        justify-content: space-between;
+        width: 80%; 
     }
 </style>
 
@@ -82,28 +223,126 @@
 
         </div>
         <div class="Second-C">
-            <div class="Second-C-son-1">
-                <h3>Beats Solo</h3>
-                <h2>Inalambrico</h2>
-                <h1>AURICULAR</h1>
+            <div class="width-second">
+                <div class="Second-C-son-1">
+                    <h3>Beats Solo</h3>
+                    <h3 style="font-size: 10vh;">weirless</h3>
+                    <h2>HEADPHONE</h2>
+                    <div class="son-c1">
+                        <button class="ButtonForSecondSon">Comprar por categoria</button>
+                        <div class="lorem">
+                            <h3>Descripcion</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo maiores cupiditate, nisi
+                                incidunt dolorem veniam dignissim</p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="Second-C-son-2">
-                <div>
-                    <button class="ButtonForSecondSon">Comprar por categoria</button>
+        </div>
+        <div class="Third-C">
+            <div class="third-son1">
+                <div style="width: 80%;">
+                    <p style="font-size:3.2vh;">enjoy</p>
+                    <p style="font-size:6vh;">With</p>
+                    <p style="font-size:6vh;">EARPHONE</p>
+                    <button>Browse</button>
+                </div>
+            </div>
+            <div class="third-son2">
+                <div style="width: 80%;">
+                    <p style="font-size:3.2vh;">new</p>
+                    <p style="font-size:6vh;">Wear</p>
+                    <p style="font-size:6vh;">GADGETS</p>
+                    <button>Browse</button>
+                </div>
+            </div>
+            <div class="third-son3">
+                <div style="width: 80%;">
+                    <p style="font-size:3.2vh;">trend</p>
+                    <p style="font-size:6vh;">Devices</p>
+                    <p style="font-size:6vh;">LAPTOP</p>
+                    <button style="padding: 2%; margin-top: 2.%;">Browse</button>
                 </div>
 
-                <div>
-                    <h3>Descripcion</h3>
-                    <p>Hay muchas variaciones
-                        de passajes de Lorem ipsum
-                        disponibles,
-                        pero la mayoria han sufrido alteraciones</p>
-                </div>
-
             </div>
-
         </div>
 
+        <div class="Third-C">
+            <div class="cuatro-son-1">
+                <div style="width: 80%;">
+                    <p style="font-size:3.2vh;">trend</p>
+                    <p style="font-size:6vh;">Devices</p>
+                    <p style="font-size:6vh;">LAPTOP</p>
+                    <button style="padding: 2%; margin-top: 2.%;">Browse</button>
+                </div>
+
+            </div>
+            <div class="cuatro-son-2">
+                <div style="width: 80%;">
+                    <p style="font-size:3.2vh;">enjoy</p>
+                    <p style="font-size:6vh;">With</p>
+                    <p style="font-size:6vh;">EARPHONE</p>
+                    <button>Browse</button>
+                </div>
+            </div>
+            <div class="cuatro-son-3">
+                <div style="width: 80%;">
+                    <p style="font-size:3.2vh;">new</p>
+                    <p style="font-size:6vh;">Wear</p>
+                    <p style="font-size:6vh;">GADGETS</p>
+                    <button>Browse</button>
+                </div>
+            </div>
+        </div>
+        <div class="icons">
+            <div class="sons-icons">
+                <i class="fa-solid fa-truck-fast" style="font-size: 350%;"></i>
+                <div>
+                    <p>Free shiping</p>
+                    <p>Freee shipin on all order</p>
+                </div>
+            </div>
+            <div class="sons-icons">
+                <i class="fa-solid fa-medal" style="font-size: 350%;"></i>
+                <div>
+                    <p>Free shiping</p>
+                    <p>Freee shipin on all order</p>
+                </div>
+            </div>
+            <div class="sons-icons">
+                <i class="fa-solid fa-headphones" style="font-size: 350%;"></i>
+                <div>
+                    <p>Free shiping</p>
+                    <p>Freee shipin on all order</p>
+                </div>
+            </div>
+            <div class="sons-icons">
+                <i class="fa-solid fa-wallet" style="font-size: 350%;"></i>
+                <div>
+                    <p>Free shiping</p>
+                    <p>Freee shipin on all order</p>
+                </div>
+            </div>
+        </div>
+        <div class="Quinto-c">
+            <img src="https://demo.phlox.pro/shop-digital/wp-content/uploads/sites/127/2019/09/2.png" alt="aurifono" style="position: absolute;  height: 100">
+            <div class="centrar-5">
+                <div class="centrar-5-1">
+                    <div>
+                        <p>20% OFF</p>
+                        <p>Fine Smile</p>
+                        <p>15 Nov To 7Dec</p>
+                    </div>
+                    <div>
+                        <p>Beat Solo Air</p>
+                        <p>Summer Sale</p>
+                        <p>Company that grown from 270 to 480 employes in the 12 months</p>
+                        <button>Shop</button>
+                    </div>
+                </div> 
+            </div>
+        </div>
 
     </div>
 
